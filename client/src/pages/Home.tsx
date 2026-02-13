@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users } from "lucide-react";
+import ROICalculator from "@/components/ROICalculator";
 
 /**
  * Design Philosophy: Architectural Futurism
@@ -314,6 +315,166 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Managed by Architects Section */}
+      <section className="py-32 bg-background blueprint-grid diagonal-top relative overflow-hidden">
+        <div className="container relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="mb-6">Managed by Architects</h2>
+            <p className="text-xl font-mono text-muted-foreground mb-20 border-l-4 border-primary pl-6">
+              Automation without oversight is dangerous. That's why we include the human.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              {/* Left: Image */}
+              <div className="relative">
+                <img 
+                  src="https://private-us-east-1.manuscdn.com/sessionFile/MWpnGEc8HE8fN3j6yv8Ezu/sandbox/VHiHP46nUQuZ7coy4IB62W-img-3_1771016208000_na1fn_Y2EtaHVtYW4tYXJjaGl0ZWN0.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvTVdwbkdFYzhIRThmTjNqNnl2OEV6dS9zYW5kYm94L1ZIaUhQNDZuVVF1Wjdjb3k0SUI2MlctaW1nLTNfMTc3MTAxNjIwODAwMF9uYTFmbl9ZMkV0YUhWdFlXNHRZWEpqYUdsMFpXTjAucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QkmZ1QJnXlPmK9cuwd94jqzERauXOcGZ6PS4tWNmZ5LbXDHldH1KcBgUijD435rI4AdpvpC5EUMyqwWNimP9ADEmuY2OIlcceXI~E6LCKkkeH~t1mzeBHovkOkO2knBXESQizwsOn3NRWVO-WKb2gh1EzW~SISaqol2Q1AZv5T6fL7ach4V3WP91H8awErWAOft3uSWWxWgySTcgRkb-hEZisxtaobqZjcoF3PaMusDhfac~HTONTSIa8lEGwfwWxzleshqwsBzGo-RX-IxyUnIPNsttPqXG-NCpug3nLmqcl8kBrofOibp-b6zmCC9Ty4OPioXEh~oB8yvyDqr1Qw__"
+                  alt="Certified Automation Architect"
+                  className="w-full h-auto border-2 border-primary glow-cyan"
+                />
+              </div>
+              
+              {/* Right: Role Card + Duties */}
+              <div className="space-y-8">
+                {/* Role Card */}
+                <div className="bg-card border-2 border-primary p-8 glow-cyan">
+                  <h3 className="text-4xl mb-4 text-primary">Certified<br/>Automation<br/>Architect</h3>
+                  <p className="font-mono text-foreground leading-relaxed">
+                    Not a support rep. Not a VA. A strategic partner trained to design, monitor, and optimize your Lifecycle Engine.
+                  </p>
+                </div>
+                
+                {/* Duties */}
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-sans font-extrabold uppercase mb-2">System Design</h4>
+                      <p className="font-mono text-muted-foreground">
+                        They map your customer journey and configure the AI to mirror your best sales processes.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-sans font-extrabold uppercase mb-2">Active Oversight</h4>
+                      <p className="font-mono text-muted-foreground">
+                        They monitor AI conversations daily, intervening if quality drops or complexity spikes.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-sans font-extrabold uppercase mb-2">Continuous Optimization</h4>
+                      <p className="font-mono text-muted-foreground">
+                        They analyze conversion data to tweak scripts, prompts, and timing for better results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section className="py-32 bg-card diagonal-top">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="mb-6">Real Results</h2>
+            <p className="text-xl font-mono text-muted-foreground mb-20 border-l-4 border-primary pl-6">
+              From revenue leaks to revenue engines.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-12">
+              {/* Case Study 1 */}
+              <div className="bg-background border border-border p-8 relative">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-primary" />
+                <p className="text-sm font-mono font-bold text-primary uppercase tracking-wider mb-6">
+                  SaaS Company • 500 Leads/Month
+                </p>
+                <h3 className="text-3xl mb-6">From 2% to 8% Conversion</h3>
+                <div className="space-y-4 font-mono text-muted-foreground mb-8">
+                  <div className="flex justify-between items-center pb-3 border-b border-border">
+                    <span>Before (Manual Follow-Up):</span>
+                    <span className="text-destructive font-bold">2%</span>
+                  </div>
+                  <div className="flex justify-between items-center pb-3 border-b border-border">
+                    <span>After (Acquisition Engine):</span>
+                    <span className="text-primary font-bold">8%</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>Additional Revenue/Month:</span>
+                    <span className="text-foreground font-bold">$180,000</span>
+                  </div>
+                </div>
+                <p className="font-mono text-sm text-muted-foreground italic">
+                  "We went from losing 98% of our inbound leads to converting 8%. The Acquisition Engine paid for itself in the first week."
+                </p>
+              </div>
+              
+              {/* Case Study 2 */}
+              <div className="bg-background border border-border p-8 relative">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-primary" />
+                <p className="text-sm font-mono font-bold text-primary uppercase tracking-wider mb-6">
+                  Professional Services • 10K Dormant Leads
+                </p>
+                <h3 className="text-3xl mb-6">$2.4M Recovered from CRM</h3>
+                <div className="space-y-4 font-mono text-muted-foreground mb-8">
+                  <div className="flex justify-between items-center pb-3 border-b border-border">
+                    <span>Dormant Leads Contacted:</span>
+                    <span className="text-foreground font-bold">10,000</span>
+                  </div>
+                  <div className="flex justify-between items-center pb-3 border-b border-border">
+                    <span>Reactivation Rate:</span>
+                    <span className="text-primary font-bold">12%</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>Revenue Recovered (12 mo):</span>
+                    <span className="text-foreground font-bold">$2,400,000</span>
+                  </div>
+                </div>
+                <p className="font-mono text-sm text-muted-foreground italic">
+                  "Our CRM was a graveyard. The Reactivation Engine turned it into our highest-ROI channel."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ROI Calculator Section */}
+      <section className="py-32 bg-background blueprint-grid diagonal-top">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-6 text-center">Calculate Your Revenue Impact</h2>
+            <p className="text-xl font-mono text-muted-foreground mb-16 text-center">
+              See how much revenue you're losing to slow follow-up.
+            </p>
+            
+            <ROICalculator />
           </div>
         </div>
       </section>
