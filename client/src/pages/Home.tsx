@@ -3,6 +3,7 @@ import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users } from "lucide
 import ROICalculator from "@/components/ROICalculator";
 import Navigation from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
+import FAQ from "@/components/FAQ";
 
 /**
  * Design Philosophy: Architectural Futurism
@@ -603,6 +604,20 @@ export default function Home() {
             </p>
             
             <ROICalculator />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-32 bg-card diagonal-top">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="mb-6 text-center">Frequently Asked Questions</h2>
+            <p className="text-xl font-mono text-muted-foreground mb-20 text-center border-l-4 border-primary pl-6 max-w-3xl mx-auto">
+              The answers to the questions you're already thinking.
+            </p>
+            
+            <FAQ />
           </div>
         </div>
       </section>
