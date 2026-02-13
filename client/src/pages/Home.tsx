@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users } from "lucide-react";
 import ROICalculator from "@/components/ROICalculator";
+import Navigation from "@/components/Navigation";
+import ContactForm from "@/components/ContactForm";
 
 /**
  * Design Philosophy: Architectural Futurism
@@ -14,8 +16,9 @@ import ROICalculator from "@/components/ROICalculator";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Navigation />
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center blueprint-grid overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center blueprint-grid overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 opacity-30"
@@ -55,7 +58,7 @@ export default function Home() {
       </section>
 
       {/* Problem Section: The Three Broken Models */}
-      <section className="py-32 bg-card diagonal-top">
+      <section id="about" className="py-32 bg-card diagonal-top">
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <h2 className="mb-6">The Three Broken Models</h2>
@@ -205,8 +208,133 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-32 bg-card diagonal-top">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="mb-6 text-center">How It Works</h2>
+            <p className="text-xl font-mono text-muted-foreground mb-20 text-center border-l-4 border-primary pl-6 max-w-3xl mx-auto">
+              From audit to launch in 14 days. No long ramp. No technical complexity.
+            </p>
+            
+            {/* Timeline */}
+            <div className="relative">
+              {/* Vertical Line */}
+              <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary hidden md:block" />
+              
+              <div className="space-y-16">
+                {/* Step 1 */}
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="md:text-right">
+                    <div className="bg-background border-2 border-primary p-8 inline-block glow-cyan">
+                      <h3 className="text-3xl mb-4">Step 1: Audit</h3>
+                      <p className="text-sm font-mono font-bold text-primary uppercase tracking-wider mb-4">
+                        Days 1-3
+                      </p>
+                      <ul className="space-y-3 font-mono text-muted-foreground text-left">
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Map your customer journey
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Analyze current conversion data
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Identify bottlenecks & leaks
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Define automation scope
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex justify-center md:justify-start">
+                    <div className="w-16 h-16 bg-primary text-primary-foreground flex items-center justify-center text-3xl font-sans font-extrabold">
+                      01
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="flex justify-center md:justify-end order-2 md:order-1">
+                    <div className="w-16 h-16 bg-primary text-primary-foreground flex items-center justify-center text-3xl font-sans font-extrabold">
+                      02
+                    </div>
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <div className="bg-background border-2 border-primary p-8 inline-block glow-cyan">
+                      <h3 className="text-3xl mb-4">Step 2: Setup</h3>
+                      <p className="text-sm font-mono font-bold text-primary uppercase tracking-wider mb-4">
+                        Days 4-10
+                      </p>
+                      <ul className="space-y-3 font-mono text-muted-foreground">
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Configure Voice, Email, Chat channels
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Train AI on your sales scripts
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Integrate with your CRM
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Assign Certified Architect
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="md:text-right">
+                    <div className="bg-background border-2 border-primary p-8 inline-block glow-cyan">
+                      <h3 className="text-3xl mb-4">Step 3: Launch</h3>
+                      <p className="text-sm font-mono font-bold text-primary uppercase tracking-wider mb-4">
+                        Days 11-14
+                      </p>
+                      <ul className="space-y-3 font-mono text-muted-foreground text-left">
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Run pilot with 10% of leads
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Monitor & optimize performance
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Scale to 100% traffic
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-primary mr-3">&gt;</span>
+                          Continuous improvement loop
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="flex justify-center md:justify-start">
+                    <div className="w-16 h-16 bg-primary text-primary-foreground flex items-center justify-center text-3xl font-sans font-extrabold">
+                      03
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section: The Lifecycle Engine */}
-      <section className="py-32 bg-card diagonal-top relative">
+      <section id="features" className="py-32 bg-card diagonal-top relative">
         {/* Background Image */}
         <div 
           className="absolute inset-0 opacity-20"
@@ -320,7 +448,7 @@ export default function Home() {
       </section>
 
       {/* Managed by Architects Section */}
-      <section className="py-32 bg-background blueprint-grid diagonal-top relative overflow-hidden">
+      <section id="architects" className="py-32 bg-background blueprint-grid diagonal-top relative overflow-hidden">
         <div className="container relative z-10">
           <div className="max-w-6xl mx-auto">
             <h2 className="mb-6">Managed by Architects</h2>
@@ -400,7 +528,7 @@ export default function Home() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-32 bg-card diagonal-top">
+      <section id="results" className="py-32 bg-card diagonal-top">
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <h2 className="mb-6">Real Results</h2>
@@ -466,7 +594,7 @@ export default function Home() {
       </section>
 
       {/* ROI Calculator Section */}
-      <section className="py-32 bg-background blueprint-grid diagonal-top">
+      <section id="calculator" className="py-32 bg-background blueprint-grid diagonal-top">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-6 text-center">Calculate Your Revenue Impact</h2>
@@ -480,24 +608,23 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-background blueprint-grid diagonal-top relative">
+      <section id="contact" className="py-32 bg-background blueprint-grid diagonal-top relative">
         {/* Corner Brackets */}
         <div className="absolute top-16 left-16 w-16 h-16 border-l-2 border-t-2 border-secondary" />
         <div className="absolute bottom-16 right-16 w-16 h-16 border-r-2 border-b-2 border-secondary" />
         
-        <div className="container relative z-10 text-center">
+        <div className="container relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="mb-8">Stop Buying Tools.</h2>
-            <p className="text-4xl md:text-5xl font-sans font-extrabold text-primary uppercase mb-16">
-              Start Building Your Engine.
-            </p>
-            <Button 
-              size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6 mb-12"
-            >
-              Schedule Your Automation Audit
-            </Button>
-            <div className="border-t border-secondary pt-8 max-w-md mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="mb-8">Stop Buying Tools.</h2>
+              <p className="text-4xl md:text-5xl font-sans font-extrabold text-primary uppercase">
+                Start Building Your Engine.
+              </p>
+            </div>
+            
+            <ContactForm />
+            
+            <div className="border-t border-secondary pt-8 mt-12 text-center">
               <p className="text-sm font-mono text-muted-foreground uppercase tracking-widest">
                 CustomerAutomation.com
               </p>
