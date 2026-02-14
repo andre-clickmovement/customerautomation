@@ -40,6 +40,9 @@ export default function Home() {
             <h1 className="mb-8 text-shadow-glow">
               Customer<br />Automation
             </h1>
+            <p className="text-xl md:text-2xl font-mono text-primary mb-16 max-w-3xl mx-auto">
+              AI Speed. Human Strategy. Zero Bottlenecks.
+            </p>
 
             <Button 
               size="lg" 
