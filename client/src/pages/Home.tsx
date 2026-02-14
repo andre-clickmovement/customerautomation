@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users } from "lucide-react";
-import ROICalculator from "@/components/ROICalculator";
 import Navigation from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
+import { Link } from "wouter";
 
 /**
  * Design Philosophy: Architectural Futurism
@@ -590,20 +590,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ROI Calculator Section */}
-      <section id="calculator" className="py-32 bg-background blueprint-grid diagonal-top">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="mb-6 text-center">Calculate Your Revenue Impact</h2>
-            <p className="text-xl font-mono text-muted-foreground mb-16 text-center">
-              See how much revenue you're losing to slow follow-up.
-            </p>
-            
-            <ROICalculator />
           </div>
         </div>
       </section>

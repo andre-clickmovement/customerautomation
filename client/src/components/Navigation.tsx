@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "wouter";
 
 /**
  * Navigation Header Component
@@ -33,13 +34,16 @@ export default function Navigation() {
     }
   };
 
+  const [location] = useLocation();
+  const isHome = location === "/";
+
   const navLinks = [
-    { id: "about", label: "About" },
-    { id: "features", label: "Features" },
-    { id: "architects", label: "Architects" },
-    { id: "results", label: "Results" },
-    { id: "calculator", label: "Calculator" },
-    { id: "contact", label: "Contact" },
+    { id: "about", label: "About", isSection: true },
+    { id: "features", label: "Features", isSection: true },
+    { id: "architects", label: "Architects", isSection: true },
+    { id: "results", label: "Results", isSection: true },
+    { id: "calculator", label: "Calculator", isSection: false, href: "/calculator" },
+    { id: "contact", label: "Contact", isSection: true },
   ];
 
   return (
@@ -63,13 +67,21 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
-              >
-                {link.label}
-              </button>
+              link.isSection ? (
+                <button
+                  key={link.id}
+                  onClick={() => scrollToSection(link.id)}
+                  className="font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </button>
+              ) : (
+                <Link key={link.id} href={link.href!}>
+                  <a className="font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors">
+                    {link.label}
+                  </a>
+                </Link>
+              )
             ))}
           </div>
 
@@ -87,13 +99,21 @@ export default function Navigation() {
           <div className="md:hidden bg-card border-t border-border">
             <div className="py-4 space-y-4">
               {navLinks.map((link) => (
-                <button
-                  key={link.id}
-                  onClick={() => scrollToSection(link.id)}
-                  className="block w-full text-left px-4 py-2 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary hover:bg-background/50 transition-colors"
-                >
-                  {link.label}
-                </button>
+                link.isSection ? (
+                  <button
+                    key={link.id}
+                    onClick={() => scrollToSection(link.id)}
+                    className="block w-full text-left px-4 py-2 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary hover:bg-background/50 transition-colors"
+                  >
+                    {link.label}
+                  </button>
+                ) : (
+                  <Link key={link.id} href={link.href!}>
+                    <a className="block w-full text-left px-4 py-2 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary hover:bg-background/50 transition-colors">
+                      {link.label}
+                    </a>
+                  </Link>
+                )
               ))}
             </div>
           </div>
