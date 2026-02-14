@@ -167,7 +167,7 @@ export default function Home() {
                 The Definition
               </p>
               <p className="text-3xl md:text-4xl font-sans font-extrabold leading-tight">
-                The infrastructure that combines <span className="bg-foreground text-background px-2">AI-powered engagement</span> with <span className="bg-foreground text-background px-2">human strategic oversight</span> to accelerate the customer lifecycle—from lead to advocate.
+                The infrastructure that combines <span className="bg-foreground text-background px-2">AI-powered engagement</span> with <span className="bg-foreground text-background px-2">human strategic oversight</span> to accelerate the customer lifecycle from lead to advocate.
               </p>
             </div>
 
