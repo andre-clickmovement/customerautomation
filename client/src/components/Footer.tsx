@@ -66,31 +66,23 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/#features">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Lifecycle Engine
-                  </a>
+                <Link href="/#features" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Lifecycle Engine
                 </Link>
               </li>
               <li>
-                <Link href="/#architects">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Certified Architects
-                  </a>
+                <Link href="/#architects" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Certified Architects
                 </Link>
               </li>
               <li>
-                <Link href="/calculator">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    ROI Calculator
-                  </a>
+                <Link href="/calculator" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  ROI Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/#results">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Case Studies
-                  </a>
+                <Link href="/#results" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Case Studies
                 </Link>
               </li>
             </ul>
@@ -103,10 +95,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/#about">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    About
-                  </a>
+                <Link href="/#about" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  About
                 </Link>
               </li>
               <li>
@@ -126,10 +116,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="/#contact">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Contact
-                  </a>
+                <Link href="/#contact" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -142,17 +130,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/privacy">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Privacy Policy
-                  </a>
+                <Link href="/privacy" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms">
-                  <a className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Terms of Service
-                  </a>
+                <Link href="/terms" className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Terms of Service
                 </Link>
               </li>
               <li>
