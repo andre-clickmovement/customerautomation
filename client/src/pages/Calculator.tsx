@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import ROICalculator from "@/components/ROICalculator";
+import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
@@ -105,16 +106,7 @@ export default function Calculator() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 bg-background border-t border-border">
-        <div className="container">
-          <div className="text-center">
-            <p className="text-sm font-mono text-muted-foreground uppercase tracking-widest">
-              CustomerAutomation.com
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

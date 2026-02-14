@@ -3,6 +3,7 @@ import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users } from "lucide
 import Navigation from "@/components/Navigation";
 import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 import { Link } from "wouter";
 
 /**
@@ -624,15 +625,11 @@ export default function Home() {
             </div>
             
             <ContactForm />
-            
-            <div className="border-t border-secondary pt-8 mt-12 text-center">
-              <p className="text-sm font-mono text-muted-foreground uppercase tracking-widest">
-                CustomerAutomation.com
-              </p>
-            </div>
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
