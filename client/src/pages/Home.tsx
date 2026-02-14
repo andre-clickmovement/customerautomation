@@ -40,21 +40,13 @@ export default function Home() {
             <h1 className="mb-8 text-shadow-glow">
               Customer<br />Automation
             </h1>
-            <p className="text-2xl md:text-3xl font-mono font-bold text-primary uppercase tracking-widest mb-12">
-              The New Category
-            </p>
-            <p className="text-xl md:text-2xl font-mono text-muted-foreground mb-16 max-w-3xl mx-auto">
-              AI Speed. Human Strategy. Zero Bottlenecks.
-            </p>
+
             <Button 
               size="lg" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6"
             >
-              Schedule Your Automation Audit <ArrowRight className="ml-2" />
+              Schedule Your Ai Automation Audit <ArrowRight className="ml-2" />
             </Button>
-            <p className="mt-8 text-sm font-mono text-muted-foreground uppercase tracking-widest">
-              CustomerAutomation.com
-            </p>
           </div>
         </div>
       </section>
