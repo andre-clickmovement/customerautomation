@@ -637,6 +637,95 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI Transformation Audit Section */}
+      <section className="py-32 bg-background diagonal-top">
+        <div className="container">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="mb-6">AI Transformation Audit</h2>
+            <p className="text-xl font-mono text-muted-foreground mb-20 max-w-3xl mx-auto">
+              Get a personalized roadmap for automating your marketing and operations.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              {/* Point 1 */}
+              <div className="bg-card border border-border p-8 text-left">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mt-1">
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4">A Clear Picture of Your AI Opportunities</h3>
+                    <p className="font-mono text-muted-foreground">
+                      We'll analyze your current operations and identify the 3-5 highest-leverage areas where AI creates real value—not generic advice, but specific to your business model.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Point 2 */}
+              <div className="bg-card border border-border p-8 text-left">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mt-1">
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4">Your Personalized Implementation Roadmap</h3>
+                    <p className="font-mono text-muted-foreground">
+                      You'll get a prioritized sequence of what to automate first for the fastest ROI. No more wondering 'where do I even start?'
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Point 3 */}
+              <div className="bg-card border border-border p-8 text-left">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mt-1">
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4">Realistic Time and Cost Expectations</h3>
+                    <p className="font-mono text-muted-foreground">
+                      We'll be honest about what AI can and can't solve for your specific situation, including rough timelines and investment ranges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Point 4 */}
+              <div className="bg-card border border-border p-8 text-left">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mt-1">
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4">Answers to Your Questions</h3>
+                    <p className="font-mono text-muted-foreground">
+                      Bring your skepticism. Bring your concerns. We'll address them directly - no hype, no BS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <Button 
+              size="lg" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6"
+            >
+              Book Appointment
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-32 bg-card diagonal-top">
         <div className="container">
