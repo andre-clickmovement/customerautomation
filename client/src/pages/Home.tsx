@@ -765,7 +765,7 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-sans font-extrabold mb-12 leading-tight">
-              What will your company do with an <span className="text-primary">AI Powered Engine</span>?
+              What will your company do when <span className="text-primary">powered by AI</span>?
             </h2>
             
             <Button 
