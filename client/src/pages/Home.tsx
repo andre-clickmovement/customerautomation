@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-32 bg-card diagonal-top">
+      <section id="how-it-works" className="py-32 bg-card diagonal-top">
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <h2 className="mb-6 text-center">How It Works</h2>
@@ -637,7 +637,7 @@ export default function Home() {
       </section>
 
       {/* AI Transformation Audit Section */}
-      <section className="py-32 bg-background diagonal-top">
+      <section id="audit" className="py-32 bg-background diagonal-top">
         <div className="container">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="mb-6">AI Transformation Audit</h2>

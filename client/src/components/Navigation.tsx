@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import { Button } from "@/components/ui/button";
 
 /**
  * Navigation Header Component
@@ -38,12 +39,10 @@ export default function Navigation() {
   const isHome = location === "/";
 
   const navLinks = [
-    { id: "about", label: "About", isSection: true },
-    { id: "features", label: "Features", isSection: true },
-    { id: "architects", label: "Architects", isSection: true },
+    { id: "about", label: "Overview", isSection: true },
+    { id: "how-it-works", label: "How It Works", isSection: true },
     { id: "results", label: "Results", isSection: true },
-    { id: "calculator", label: "Calculator", isSection: false, href: "/calculator" },
-    { id: "contact", label: "Contact", isSection: true },
+    { id: "audit", label: "Our Audit", isSection: true },
   ];
 
   return (
@@ -67,22 +66,21 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              link.isSection ? (
-                <button
-                  key={link.id}
-                  onClick={() => scrollToSection(link.id)}
-                  className="font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </button>
-              ) : (
-                <Link key={link.id} href={link.href!}>
-                  <a className="font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors">
-                    {link.label}
-                  </a>
-                </Link>
-              )
+              <button
+                key={link.id}
+                onClick={() => scrollToSection(link.id)}
+                className="font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
+              >
+                {link.label}
+              </button>
             ))}
+            <Button 
+              size="sm"
+              onClick={() => scrollToSection("contact")}
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono font-bold uppercase tracking-wider"
+            >
+              Book Appointment →
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -99,22 +97,23 @@ export default function Navigation() {
           <div className="md:hidden bg-card border-t border-border">
             <div className="py-4 space-y-4">
               {navLinks.map((link) => (
-                link.isSection ? (
-                  <button
-                    key={link.id}
-                    onClick={() => scrollToSection(link.id)}
-                    className="block w-full text-left px-4 py-2 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary hover:bg-background/50 transition-colors"
-                  >
-                    {link.label}
-                  </button>
-                ) : (
-                  <Link key={link.id} href={link.href!}>
-                    <a className="block w-full text-left px-4 py-2 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary hover:bg-background/50 transition-colors">
-                      {link.label}
-                    </a>
-                  </Link>
-                )
+                <button
+                  key={link.id}
+                  onClick={() => scrollToSection(link.id)}
+                  className="block w-full text-left px-4 py-2 font-mono text-sm uppercase tracking-wider text-muted-foreground hover:text-primary hover:bg-background/50 transition-colors"
+                >
+                  {link.label}
+                </button>
               ))}
+              <div className="px-4 pt-2">
+                <Button 
+                  size="sm"
+                  onClick={() => scrollToSection("contact")}
+                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-mono font-bold uppercase tracking-wider"
+                >
+                  Book Appointment →
+                </Button>
+              </div>
             </div>
           </div>
         )}
