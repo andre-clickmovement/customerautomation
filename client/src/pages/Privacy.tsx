@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
@@ -10,6 +11,11 @@ import { ArrowLeft } from "lucide-react";
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Privacy Policy"
+        description="Privacy policy for CustomerAutomation.com. Learn how we collect, use, and protect your personal information."
+        path="/privacy"
+      />
       <Navigation />
       
       <div className="pt-32 pb-24">

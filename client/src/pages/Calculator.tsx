@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import ROICalculator from "@/components/ROICalculator";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
@@ -12,6 +13,11 @@ import { ArrowLeft } from "lucide-react";
 export default function Calculator() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="ROI Calculator"
+        description="Calculate the revenue impact of Customer Automation on your business. See how much revenue you're losing to slow lead response and how much you could recover."
+        path="/calculator"
+      />
       <Navigation />
       
       {/* Hero Section */}
