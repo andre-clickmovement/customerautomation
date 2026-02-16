@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
@@ -740,22 +739,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-32 bg-background blueprint-grid diagonal-top relative">
-        {/* Corner Brackets */}
-        <div className="absolute top-16 left-16 w-16 h-16 border-l-2 border-t-2 border-secondary" />
-        <div className="absolute bottom-16 right-16 w-16 h-16 border-r-2 border-b-2 border-secondary" />
+      {/* Final CTA Section */}
+      <section id="contact" className="py-32 bg-gradient-to-b from-background to-card relative overflow-hidden">
+        {/* Gradient Orb Effect */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/10 blur-3xl" />
         
         <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="mb-8">Stop Buying Tools.</h2>
-              <p className="text-4xl md:text-5xl font-sans font-extrabold text-primary uppercase">
-                Start Building Your Engine.
-              </p>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-6xl font-sans font-extrabold mb-12 leading-tight">
+              What will your company do with an <span className="text-primary">AI Powered Engine</span>?
+            </h2>
             
-            <ContactForm />
+            <Button 
+              size="lg" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6 mb-4"
+            >
+              Book Appointment →
+            </Button>
+            
+            <p className="text-sm font-mono text-muted-foreground">
+              Month-to-month. Cancel anytime.
+            </p>
           </div>
         </div>
       </section>
