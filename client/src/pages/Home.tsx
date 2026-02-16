@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users } from "lucide-react";
+import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -51,6 +51,24 @@ export default function Home() {
             </Button>
           </div>
         </div>
+        
+        {/* Animated Scroll Indicator */}
+        <button
+          onClick={() => {
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+              const offset = 80;
+              const elementPosition = aboutSection.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - offset;
+              window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
+          }}
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-primary hover:text-primary/80 transition-colors group"
+          aria-label="Scroll to content"
+        >
+          <span className="text-xs font-mono uppercase tracking-widest">Scroll</span>
+          <ChevronDown className="w-8 h-8 animate-bounce" />
+        </button>
       </section>
 
       {/* Problem Section: The Three Broken Models */}
