@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
@@ -10,6 +11,11 @@ import { ArrowLeft } from "lucide-react";
 export default function Terms() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Terms of Service"
+        description="Terms of service for CustomerAutomation.com. Review the terms governing use of our AI-powered customer automation services."
+        path="/terms"
+      />
       <Navigation />
       
       <div className="pt-32 pb-24">

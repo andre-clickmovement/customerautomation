@@ -3,6 +3,7 @@ import { ArrowRight, Zap, Brain, Infinity, Building2, Code, Users, ChevronDown }
 import Navigation from "@/components/Navigation";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Link } from "wouter";
 
 /**
@@ -14,9 +15,35 @@ import { Link } from "wouter";
  * - Inter Extra Bold for headlines, Roboto Mono for body
  */
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Customer Automation",
+    url: "https://customerautomation.com",
+    logo: "https://customerautomation.com/favicon.png",
+    description:
+      "The infrastructure that combines AI-powered engagement with human strategic oversight to accelerate the entire customer lifecycle.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Customer Automation",
+    url: "https://customerautomation.com",
+    description:
+      "AI-powered customer lifecycle automation managed by Certified Automation Architects.",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="AI Speed. Human Strategy."
+        description="The infrastructure that combines AI-powered engagement with human strategic oversight to accelerate the entire customer lifecycle — from lead to loyal advocate."
+        path="/"
+        jsonLd={jsonLd}
+      />
       <Navigation />
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center justify-center blueprint-grid overflow-hidden">
