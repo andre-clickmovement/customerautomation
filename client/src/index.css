@@ -106,7 +106,7 @@
   
   /* Typography Hierarchy */
   h1 {
-    @apply font-sans font-extrabold text-6xl md:text-7xl lg:text-8xl uppercase tracking-tighter;
+    @apply font-sans font-extrabold text-4xl sm:text-5xl md:text-7xl lg:text-8xl uppercase tracking-tighter;
   }
   h2 {
     @apply font-sans font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight;
@@ -194,9 +194,16 @@
   
   /* Diagonal Section Divider */
   .diagonal-top {
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
-    margin-top: -5rem;
-    padding-top: 8rem;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -3rem;
+    padding-top: 6rem;
+  }
+  @media (min-width: 768px) {
+    .diagonal-top {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      margin-top: -5rem;
+      padding-top: 8rem;
+    }
   }
   .diagonal-bottom {
     clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
