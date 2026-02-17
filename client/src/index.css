@@ -106,7 +106,7 @@
   
   /* Typography Hierarchy */
   h1 {
-    @apply font-sans font-extrabold text-4xl sm:text-5xl md:text-7xl lg:text-8xl uppercase tracking-tighter;
+    @apply font-sans font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase tracking-tighter;
   }
   h2 {
     @apply font-sans font-extrabold text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight;
