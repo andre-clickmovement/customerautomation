@@ -67,14 +67,14 @@ export default function Home() {
               Customer<br />Automation
             </h1>
             <p className="text-xl md:text-2xl font-mono text-primary mb-16 max-w-3xl mx-auto">
-              AI Speed. Human Strategy. Zero Bottlenecks.
+              Human Insight With AI Speed
             </p>
 
             <Button
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-sm sm:text-lg font-mono font-bold uppercase tracking-wider px-6 sm:px-12 py-6 max-w-full whitespace-normal h-auto"
             >
-              Schedule Your Ai Automation Audit <ArrowRight className="ml-2 flex-shrink-0" />
+Book Appointment <ArrowRight className="ml-2 flex-shrink-0" />
             </Button>
           </div>
         </div>

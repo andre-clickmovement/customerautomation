@@ -19,7 +19,7 @@ export default function Footer() {
               CustomerAutomation.com
             </h3>
             <p className="font-mono text-sm text-muted-foreground leading-relaxed mb-6">
-              The infrastructure layer for modern customer engagement. AI Speed. Human Strategy. Zero Bottlenecks.
+              The infrastructure layer for modern customer engagement. AI Speed. Human Insight. Zero Bottlenecks.
             </p>
             <div className="flex gap-4">
               <a
@@ -166,7 +166,7 @@ export default function Footer() {
               © {currentYear} CustomerAutomation.com. All rights reserved.
             </p>
             <p className="font-mono text-xs text-muted-foreground">
-              Built with AI Speed. Managed with Human Strategy.
+              Built with AI Speed. Managed with Human Insight.
             </p>
           </div>
         </div>
