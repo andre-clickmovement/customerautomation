@@ -1,4 +1,3 @@
-import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import Cal from "@calcom/embed-react";
@@ -11,9 +10,13 @@ export default function BookCall() {
         description="Schedule your free Customer Automation consultation. Pick a time that works for you and let's discuss how AI can accelerate your customer lifecycle."
         path="/book-call"
       />
-      <Navigation />
 
-      <div className="flex-1 pt-20">
+      <div className="flex-1">
+        <div className="container pt-12 pb-8 text-center">
+          <h1 className="text-5xl md:text-7xl font-sans font-extrabold uppercase">
+            Book Your <span className="text-primary">Audit</span> Today
+          </h1>
+        </div>
         <Cal
           calLink="levregai/customer-automation"
           config={{
