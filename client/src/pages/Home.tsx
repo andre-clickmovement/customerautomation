@@ -70,12 +70,14 @@ export default function Home() {
               Human Insight With AI Speed
             </p>
 
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-sm sm:text-lg font-mono font-bold uppercase tracking-wider px-6 sm:px-12 py-6 max-w-full whitespace-normal h-auto"
-            >
-Book Appointment <ArrowRight className="ml-2 flex-shrink-0" />
-            </Button>
+            <Link href="/get-started">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-sm sm:text-lg font-mono font-bold uppercase tracking-wider px-6 sm:px-12 py-6 max-w-full whitespace-normal h-auto"
+              >
+                Book Appointment <ArrowRight className="ml-2 flex-shrink-0" />
+              </Button>
+            </Link>
           </div>
         </div>
         
@@ -760,12 +762,14 @@ Book Appointment <ArrowRight className="ml-2 flex-shrink-0" />
               </div>
             </div>
             
-            <Button 
-              size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6"
-            >
-              Book Appointment
-            </Button>
+            <Link href="/get-started">
+              <Button 
+                size="lg" 
+                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6"
+              >
+                Book Appointment
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -795,12 +799,14 @@ Book Appointment <ArrowRight className="ml-2 flex-shrink-0" />
               What will your company do when <span className="text-primary">powered by AI</span>?
             </h2>
             
-            <Button 
-              size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6 mb-4"
-            >
-              Book Appointment →
-            </Button>
+            <Link href="/get-started">
+              <Button 
+                size="lg" 
+                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-6 mb-4"
+              >
+                Book Appointment →
+              </Button>
+            </Link>
             
             <p className="text-sm font-mono text-muted-foreground">
               Month-to-month. Cancel anytime.

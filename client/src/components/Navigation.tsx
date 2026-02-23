@@ -74,13 +74,14 @@ export default function Navigation() {
                 {link.label}
               </button>
             ))}
-            <Button 
-              size="sm"
-              onClick={() => scrollToSection("contact")}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono font-bold uppercase tracking-wider"
-            >
-              Book Appointment →
-            </Button>
+            <Link href="/get-started">
+              <Button 
+                size="sm"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-mono font-bold uppercase tracking-wider"
+              >
+                Book Appointment →
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -106,13 +107,14 @@ export default function Navigation() {
                 </button>
               ))}
               <div className="px-4 pt-2">
-                <Button 
-                  size="sm"
-                  onClick={() => scrollToSection("contact")}
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-mono font-bold uppercase tracking-wider"
-                >
-                  Book Appointment →
-                </Button>
+                <Link href="/get-started">
+                  <Button 
+                    size="sm"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-mono font-bold uppercase tracking-wider"
+                  >
+                    Book Appointment →
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

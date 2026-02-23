@@ -103,7 +103,7 @@ export default function Calculator() {
             <p className="text-xl font-mono text-muted-foreground mb-8">
               Schedule a free Automation Audit to see your exact revenue recovery potential.
             </p>
-            <Link href="/#contact">
+            <Link href="/get-started">
               <a className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan-hover text-lg font-mono font-bold uppercase tracking-wider px-12 py-4 transition-colors">
                 Schedule Your Audit
               </a>

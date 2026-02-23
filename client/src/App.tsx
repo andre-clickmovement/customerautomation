@@ -8,6 +8,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Calculator from "./pages/Calculator";
 import GetStarted from "./pages/GetStarted";
+import BookCall from "./pages/BookCall";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
@@ -18,6 +19,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path="/calculator" component={Calculator} />
       <Route path="/get-started" component={GetStarted} />
+      <Route path="/book-call" component={BookCall} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/terms" component={Terms} />
       <Route path={"/404"} component={NotFound} />
