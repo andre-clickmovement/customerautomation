@@ -1,11 +1,9 @@
-import { Button } from "@/components/ui/button";
-
 export default function CaseStudies() {
   return (
     <section id="results" className="py-32 bg-card diagonal-top">
       <div className="container">
         <div className="max-w-6xl mx-auto">
-          <h2 className="mb-6">Real Results</h2>
+          <h2 className="mb-6">AI Results</h2>
           <p className="text-xl font-mono text-muted-foreground mb-20 border-l-4 border-primary pl-6">
             From revenue leaks to revenue engines.
           </p>
@@ -34,13 +32,6 @@ export default function CaseStudies() {
               <p className="font-mono text-sm text-muted-foreground mb-6 flex-grow">
                 A local business owner was drowning in phone calls. Not good calls—a flood of interruptions that pulled them away from...
               </p>
-              
-              <Button 
-                variant="outline" 
-                className="w-full font-mono font-bold uppercase tracking-wider border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                Contact for Workflow →
-              </Button>
             </div>
             
             {/* Case Study 2: The Sleeping Database */}
@@ -66,13 +57,6 @@ export default function CaseStudies() {
               <p className="font-mono text-sm text-muted-foreground mb-6 flex-grow">
                 A local med spa had a problem hiding in plain sight: a database full of past customers they weren't talking to.
               </p>
-              
-              <Button 
-                variant="outline" 
-                className="w-full font-mono font-bold uppercase tracking-wider border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                Contact for Workflow →
-              </Button>
             </div>
             
             {/* Case Study 3: The 5-Minute Window */}
@@ -98,13 +82,6 @@ export default function CaseStudies() {
               <p className="font-mono text-sm text-muted-foreground mb-6 flex-grow">
                 A business owner had a good problem: too many inbound leads. Their marketing was working. Forms were being filled out. Phone...
               </p>
-              
-              <Button 
-                variant="outline" 
-                className="w-full font-mono font-bold uppercase tracking-wider border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                Contact for Workflow →
-              </Button>
             </div>
           </div>
         </div>
