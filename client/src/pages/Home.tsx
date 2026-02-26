@@ -64,9 +64,12 @@ export default function Home() {
         
         <div className="container relative z-10 text-center">
           <div className="max-w-5xl mx-auto">
-            <h1 className="mb-16 text-shadow-glow text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl mx-auto leading-tight">
-              The Ai Operating System<br />Behind Predictable Revenue
+            <h1 className="mb-8 text-shadow-glow">
+              Customer<br />Automation
             </h1>
+            <p className="text-xl md:text-2xl font-mono text-primary mb-16 max-w-3xl mx-auto">
+              Human Insight With AI Speed
+            </p>
 
             <Link href="/get-started">
               <Button
