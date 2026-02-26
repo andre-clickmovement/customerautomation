@@ -58,9 +58,9 @@ export default function Navigation() {
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="font-mono font-bold text-primary uppercase tracking-widest text-sm md:text-base hover:text-primary/80 transition-colors"
+            className="hover:opacity-80 transition-opacity"
           >
-            CustomerAutomation.com
+            <img src="/logo.png" alt="Customer Automation" className="h-9 w-auto" />
           </button>
 
           {/* Desktop Navigation */}

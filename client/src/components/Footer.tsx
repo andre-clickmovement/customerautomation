@@ -15,9 +15,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div>
-            <h3 className="font-mono font-bold text-primary uppercase tracking-widest text-sm mb-4">
-              CustomerAutomation.com
-            </h3>
+            <img src="/logo.png" alt="Customer Automation" className="h-8 w-auto mb-4" />
             <p className="font-mono text-sm text-muted-foreground leading-relaxed mb-6">
               The infrastructure layer for modern customer engagement. AI Speed. Human Insight. Zero Bottlenecks.
             </p>
