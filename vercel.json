@@ -1,8 +1,8 @@
 {
-  "buildCommand": "vite build",
+  "buildCommand": "vite build --base=/go/customerautomation/",
   "outputDirectory": "dist/public",
   "framework": "vite",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/go/customerautomation/:path*", "destination": "/go/customerautomation/index.html" }
   ]
 }
